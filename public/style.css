@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+
+:root{
+  --primary-font: 'Outfit', sans-serif;
+
+  --font-weight--light: 300;
+  --font-weight--regular: 400;
+  --font-weight--medium: 500;
+  --font-weight--bold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
