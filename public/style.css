@@ -1,16 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap");
 
-:root{
-  --primary-font: 'Outfit', sans-serif;
+:root {
+  --primary-font: "Outfit", sans-serif;
 
   --font-weight--light: 300;
   --font-weight--regular: 400;
   --font-weight--medium: 500;
   --font-weight--bold: 600;
+
+  --color-dark: #1f1f1f;
+  --color-darkGray: #525252;
+  --color-white: #f1f1f1;
+  --color-whiteGray: #c3c3c3;
+
+  --bg-white: #fdfdfd;
+  --bg-whiteGray: #eee;
+  --bg-primary: cornflowerblue;
+
+  --bg-shadow-1: 0 0 10px -6px rgb(0 0 0 / 50%);
+  --bg-shadow-2: 0 2px 5px #ccc;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--primary-font);
 }
+
+body {
+  background: var(--bg-whiteGray);
+}
+
+.mainInner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section Style Start */
+
+header {
+  height: 50px;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--bg-shadow-1);
+}
+
+header h2 {
+  font-family: var(--primary-font);
+  font-weight: var(--font-weight--bold);
+  font-size: 1.8rem;
+  color: var(--color-white);
+}
+
+/* Header Section Style End */
+
+/* Note Section Style Start */
+
+.note--container {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.noteItems--wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+  justify-content: center;
+}
+
+.note-item {
+  background: var(--bg-white);
+  padding: 0.6rem 0.8rem;
+  width: 15rem;
+  border-radius: 4px;
+  box-shadow: var(--bg-shadow-2);
+}
+
+.note-item h3 {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bg-whiteGray);
+}
+
+.note-item p {
+  color: var(--color-darkGray);
+  font-weight: var(--font-weight--light);
+}
+
+/* Note Section Style End */
+
+/* Footer Section Style Start */
+
+footer {
+  width: 100%;
+  position: static;
+  bottom: 0;
+  background-color: var(--bg-white);
+  padding: 10px 0;
+}
+
+footer p {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-whiteGray);
+}
+
+/* Footer Section Style End */
